@@ -19,4 +19,32 @@ class MoviesController < ApplicationController
     
   end
 
+  def show_goonies
+    @movie = {
+      title: 'Goonies',
+      subtitle: "Trailer",
+      video_id: 'pWgc8Ute2tU',
+      description: 'Greatest 80s movie ever'
+    }
+  end
+
+  def show_donnie
+    @movie = {
+      title: 'Donnie Darko',
+      subtitle: "School intro",
+      video_id: 'q4JJZBrudNA',
+      description: 'Worm holes are cool'
+    }
+  end
+
+  def index
+    @title = {
+      ma: "Matilda",
+      go: "Goonies",
+      don: "Donnie Darko",
+      gl: "Gladiator"
+    }
+
+  end
+
 end
